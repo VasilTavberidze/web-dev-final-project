@@ -1,0 +1,483 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Typography */
+
+html {
+    font-size: 18px;
+}
+
+body {
+    font-family: 'poppins' , sans-serif;
+    line-height: 1.55;
+    color: rgb(60, 58, 71);
+} 
+
+h1 {
+    font-size: 3.15rem ;
+    font-weight: 700;
+    letter-spacing: -2px;
+}
+
+h2 {
+    font-size: 1.75rem;
+    font-weight: 300;
+    letter-spacing: -1px;
+    color: rgba(60, 58, 71, .8);
+}
+
+h3 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    letter-spacing: -2px;
+    margin-bottom: 2rem;
+    /* color: rgb(60, 58, 71); */
+}
+
+h3.large {
+    font-size: 3.15rem;
+}
+
+.dark h3 {
+    color: white;
+} 
+
+h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 1.3rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+p.section-intro {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 200;
+    margin-bottom: .5rem;
+}
+
+.dark p.section-intro {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 200;
+    margin-bottom: .5rem;
+    color: rgba(255, 255, 255, .8);
+}
+
+p.number {
+    font-size: 2.4rem;
+    font-weight: 200;
+    margin: 1.5rem 0rem 1.5rem;
+    color: rgba(60, 58, 71, 0.5);
+    
+}
+
+p.large {
+    font-size: 1.75rem;
+    font-weight: 200;
+    letter-spacing: -1px;
+    color: rgb(60, 58, 71);
+}
+
+a {
+    font-weight: 700;
+    text-decoration: none;
+    color: rgb(159, 118, 87);
+}
+
+a:hover {
+    color: rgb(140, 51, 181);
+}
+
+
+form input,
+form textarea,
+form button {
+    font-family: 'poppins', sans-serif;
+    font-size: 18px;
+    line-height: 1.55;
+}
+
+/* Container */
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.container.small {
+    width: 60%;
+    max-width: 35rem;
+}
+
+/* header */
+
+#main-header,
+section {
+    padding: 13rem 0;
+    text-align: center;
+}
+
+#main-header h1 {
+    margin: 7rem 0 1rem 0;
+}
+#main-header h2 {
+    margin-bottom: 7rem;
+}
+
+.btn {
+    padding: 1.3rem 3.5rem;
+    border: 1px solid rgb(159, 118, 87);
+    font-weight: 700;
+}
+
+.btn:hover {
+    background-color: rgb(60, 58, 71);
+    border-color: rgb(60, 58, 71);
+    color: rgb(255, 255, 255);
+}
+
+/* chair section */
+#our-chairs {
+    background-color: #EFF0EA;
+}
+
+section header {
+    margin-bottom: 3.5rem;
+}
+
+h3+p {
+    max-width: 35rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gallery-slider {
+    overflow: hidden;
+}
+
+.gallery {
+    display: flex;
+    transition: transform 0.3s ease-out;
+    margin-bottom: 3.5rem;
+}
+
+.gallery-item {
+    flex: 0 0 100%; 
+    max-width: 100%;
+}
+
+/* Slider controls styles */
+.slider-controls {
+    text-align: center;
+}
+
+.slider-btn {
+    background: rgb(51, 51, 51);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.slider-btn:hover { background: rgb(255, 255, 255);
+    color: rgb(51, 51, 51);
+    border: 1px solid rgb(86, 78, 72);
+}
+
+img {
+    max-width: 100%;
+}
+
+.gallery img {
+    margin-bottom: 1.3rem;
+}
+
+
+/* contact section */
+
+.dark {
+    background-color: rgb(93, 91, 101);
+}
+ 
+.dark label {
+    color: #D8D8DA;
+}
+
+form div {
+    margin-bottom: 1.75rem;
+}
+
+form label {
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: start;
+    margin-bottom: .5rem;
+}
+
+form input,
+textarea {
+    background-color: rgba(255, 255, 255, .1);
+    border: none;
+    padding: 1rem;
+    width: 100%;
+    color: white;
+    resize: none;
+}
+
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    background-color: rgba(255, 255, 255, .20);
+}
+
+form .btn {
+    width: 100%;
+    cursor: pointer;
+}
+
+.dark .btn {
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    background: transparent;
+    color: rgb(255, 255, 255);
+}
+
+.dark .btn:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0)
+}
+
+p.muted {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+form button + p {
+    margin-top: 1.75rem;
+}
+
+/* Visit store */
+
+.social-icons {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+p.large + .social-icons {
+    margin-top: 7rem;
+}
+
+footer { 
+    padding: 5rem 0;
+}
+
+footer p {
+    text-align: center;
+}
+
+
+/*  Login Section */
+#login, #register{
+    background: #f3f3f3;
+    padding: 40px 0;
+
+}
+
+
+h5 {
+    font-size: 2.15rem;
+    font-weight: 700;
+    letter-spacing: -2px;
+    margin-bottom: 50px;
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 4px 8px;
+    border-radius: 100px;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 2px;
+}
+
+.input-wrapper input {
+    flex: auto;
+    padding-right: 40px; 
+    border: 1px solid #000; 
+    outline: none;
+    height: 30px;
+    font-size: 14px;
+    width: 100%;
+    color: rgb(0, 0, 0);
+}
+
+.input-wrapper .bx {
+    font-size: 25px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.btn2 {
+    padding: .3rem .8rem;
+    border: 1px solid rgb(86, 78, 72);
+    font-weight: 600;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.btn2:hover {
+    background-color: rgb(60, 58, 71);
+    border-color: rgb(60, 58, 71);
+    color: rgb(255, 255, 255);
+}
+
+#login .remember-forgot, #register .remember-forgot {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#login .register-link, #register .register-link {
+    width: 100%;
+    text-align: center; 
+}
+
+#login .container, #register .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="text2"], input[type="password"], textarea {
+    background-color: rgba(255, 255, 255, .1);
+    border: 1px solid #000; 
+    padding: 1rem;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    resize: none;
+}
+
+/* Container styles */
+#logout {
+    position: relative;
+    padding: 10px;
+    background-color: #f9f9f9; 
+    border: 1px solid #e0e0e0; 
+}
+
+/* Button styles */
+#logoutButton {
+    padding: 10px 20px;        
+    font-size: 16px;           
+    border: none;              
+    border-radius: 5px;        
+    background-color: #000000; 
+    color: white;              
+    cursor: pointer;           
+    transition: background-color 0s; 
+    margin: 0px 4%;
+}
+
+#logoutButton:hover {
+    background-color: #c2c2c2; 
+}
+
+#commentsSection {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+
+
+.comment {
+    padding: 5px;
+    margin-top: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+#addComment textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+}
+
+#submitComment {
+    padding: 10px 20px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submitComment:hover {
+    background-color: #a5f2a5;
+    color: #4c6d4c;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+    h1,
+    h3.large {
+          font-size: 2.3rem;
+    }
+
+    h2,
+    p.large {
+          font-size: 1.3rem;
+    }
+
+    h3 {
+          font-size: 1.8rem;
+    }
+
+    .container.small {
+          width: 85%;
+    }
+
+    #main-header, 
+    section {
+          padding: 6rem 0;
+    }
+
+    footer {
+          padding: 2.5rem 0 ;
+    }
+
+    p.large + .social-icons {
+          margin-top: 3.5rem;
+    }
+
+    #main-header h1 {
+          margin-top: 3.5rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .gallery {
+          grid-template-columns: 1fr;
+          gap: 2rem;
+    }
+}
